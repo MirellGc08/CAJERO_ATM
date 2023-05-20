@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero automatico</title>
+    <title>Cajero ATM B&M</title>
+  <link rel="stylesheet" href="../css/main.css">
+<script defer src="../javascript/ingreso.js"></script>
+</head>
+    <body>
+  <!-- Sección del formulario de inicio de sesión -->
+  <div id="loginSection">
+    <div id="inicio">
+    <h2>INICIAR SESIÓN</h2>
+  </div>
+    <form id="loginForm">
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" required>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" required>
+      <button id="btnIniciar" type="submit">Iniciar sesión</button>
+    </form>
+  </div>
+
+  <!-- Sección de las consultas de saldo, retiro e ingreso -->
+  <div id="operationsSection" class="hidden">
+    <img src="../imgs/imagen_2023-05-19_215610845-fotor-bg-remover-20230519215634.png" alt="star"> 
+    <h1>CAJERO ATM B&M</h1>
+    <h2>Bienvenido/a, <span id="usernameDisplay"></span></h2>
+    <button id="btnConsultarSaldo">Consultar saldo</button>
+    <button id="btnIngresarMonto">Ingresar monto</button>
+    <button id="btnRetirarMonto">Retirar monto</button>
+    <button id="btnBack">Retroceder</button>
+  </div>
+    </body>
+</html>
